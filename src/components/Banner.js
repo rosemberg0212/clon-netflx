@@ -1,9 +1,7 @@
-import { makeStyles, Typography, Button } from '@material-ui/core';
 import React, { useContext, useEffect } from 'react';
 import {FaPlay} from 'react-icons/fa'
 import {AiOutlineInfoCircle} from 'react-icons/ai'
 import MovieContext from '../context/movie/movieContext';
-import fondo from '../img/Lupin+Part+2+banner.jpg'
 
 
 const Banner = () => {
