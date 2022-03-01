@@ -1,0 +1,11 @@
+.home{
+    min-height: 100vh;
+    background-color: #141414
+} 
+
+$Bcolor: #e50914;
+
+@import 'header';
+@import 'banner';
+@import 'login';
+@import 'signIn';

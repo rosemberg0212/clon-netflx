@@ -1,0 +1,122 @@
+.contenLogin{
+    position: relative;
+    height: 170vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/fondo.jpg');
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .image{
+        position: fixed;
+        top: 0;
+        left: 56px;
+        width: 170px;
+        cursor: pointer;
+    }
+
+    .form{
+        position: relative;
+        width: 450px;
+        height: 660px;
+        background-color: rgba(0,0,0,.75);
+        margin: auto;
+        top: 91px;
+
+        .inputs{
+            width: 314px;
+            height: 329px;
+            margin: auto;
+            position: relative;
+            top: 61px;
+            h2{
+                font-size: 32px;
+                color: #fff;
+                margin-bottom: 28px;
+            }
+
+            .log{
+                display: flex;
+                flex-direction: column;
+                .email{
+                    margin-bottom: 16px;
+                }
+                input{
+                    height: 50px;
+                    border-radius: 4px;
+                    border: none;
+                    font-size: 16px;
+                    text-align: center;
+                    background-color: #333333;
+                    color: #fff;
+                }
+                .sub{
+                    margin-top: 40px;
+                    cursor: pointer;
+                    color: #fff;
+                    background: $Bcolor;
+                    font-weight: 600;
+                }
+            }
+
+            .record{
+                display: flex;
+                font-size: 14px;
+                color: #b3b3b3;
+                justify-content: space-between;
+                margin-top: 11px;
+
+                a{
+                    cursor: pointer;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .suscri{
+                color: #b3b3b3;
+                margin-top: 47px;
+                .facebook{
+                    display: flex;
+                    margin-bottom: 14px;
+                    .ico{
+                        font-size: 26px;
+                        color: #4837dd;
+                        margin-right: 10px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                .suscrib{
+                    font-size: 17px;
+                    display: flex;
+                    margin-bottom: 12px;
+                    a{
+                        color: #fff;
+                        margin-left: 4px;
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .mas-info{
+                    font-size: 14px;
+                    a{
+                        color: #0071eb;
+                        margin-left: 2px;
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
