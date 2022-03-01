@@ -19,6 +19,7 @@
 .navbar li {
   list-style: none;
   color: #fff;
+  cursor: pointer;
 }
 .navbar ul {
   display: flex;
@@ -31,11 +32,16 @@
 .navbar .firs-menu .logo {
   width: 110px;
   margin-left: 54px;
+  cursor: pointer;
 }
 .navbar .firs-menu ul {
   width: 100%;
   margin-left: 25px;
   gap: 20px;
+}
+.navbar .firs-menu ul li:hover {
+  color: #b3b3b3;
+  transition: 0.8s;
 }
 .navbar .second-menu {
   width: 218px;
@@ -80,13 +86,14 @@
 }
 .banner .content .ubicacion .posiso {
   margin-left: 54px;
-  width: 30%;
+  width: 50%;
 }
 .banner .content .ubicacion .posiso .titulo {
-  font-size: 3.9rem;
+  font-size: 3.8rem;
 }
 .banner .content .ubicacion .posiso p {
   word-wrap: break-word;
+  font-size: 18px;
 }
 .banner .content .ubicacion .posiso .buttons {
   margin-top: 20px;

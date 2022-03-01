@@ -3,25 +3,33 @@ import MovieContext from './movieContext';
 import MovieReducer from './movieReducer';
 import axios from 'axios';
 
-// import {
-	
-// } from '../../types';
+import {
+	BANNER
+} from '../../types';
 
 const MoviehState = props =>{
 	const initialState = {
-		movie: null
+		banner: null
 	}
 
 	const [state, dispatch] = useReducer(MovieReducer, initialState);
 
+	const api_key = '6593c17bc96dde9caf9c593636c40304';
 	const getMovie = async ()=>{
-		// const res = await axios.get('https://api.themoviedb.org/3/movie/76341?api_key=<<api_key>>')
+		const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&language=en-US&page=1`)
+		console.log(res.data.results)
+
+		dispatch({
+			type: BANNER,
+			payload: res.data.results
+		})
 	}
 
 	return(
 		<MovieContext.Provider
 			value={{
-				movie: state.movie
+				banner: state.banner,
+				getMovie
 			}}
 		>{props.children}
 			

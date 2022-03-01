@@ -13,6 +13,7 @@
     li{
         list-style: none;
         color: #fff;
+        cursor: pointer;
     }
 
     ul{
@@ -27,11 +28,19 @@
         .logo{
             width: 110px;
             margin-left: 54px;
+            cursor: pointer;
         }
         ul{
             width: 100%;
             margin-left: 25px;
-            gap: 20px
+            gap: 20px;
+            
+            li{
+                &:hover{
+                    color: #b3b3b3;
+                    transition: .8s;
+                }
+            }
         }
     }
 

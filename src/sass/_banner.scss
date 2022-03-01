@@ -1,3 +1,4 @@
+
 .banner{
     background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0),), url('../img/Lupin+Part+2+banner.jpg');
     height: 567px;
@@ -15,13 +16,14 @@
             align-items: center;
             .posiso{
                 margin-left: 54px;
-                width: 30%;
+                width: 50%;
                 .titulo{
-                    font-size: 3.9rem;
+                    font-size: 3.8rem;
                 }
         
                 p{
                     word-wrap: break-word;
+                    font-size: 18px;
                 }
         
                 .buttons{

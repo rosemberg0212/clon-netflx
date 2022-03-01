@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import logo from '../img/logo-n.png';
 import avatar from '../img/Netflix-avatar.png' 
 import {BiSearchAlt} from 'react-icons/bi'
-import {FaBell} from 'react-icons/fa'
+import {FaBell} from 'react-icons/fa';
 
 const Header = () => {
     // const classes = useStyles();
@@ -25,7 +25,10 @@ const Header = () => {
     return (
         <nav className={`navbar ${show && 'transp'} `}>
             <div className='firs-menu'>
-                <img src={logo} alt='logo' className='logo'/>
+                <Link to='/home'>
+                    <img src={logo} alt='logo' className='logo'/>
+                </Link>
+                
                 <ul>
                     <li>Inicio</li>
                     <li>Series</li>
